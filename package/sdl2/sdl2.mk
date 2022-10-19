@@ -20,7 +20,6 @@ SDL2_CONF_OPTS += \
 	--disable-esd \
 	--disable-dbus \
 	--disable-pulseaudio \
-	--disable-video-vivante \
 	--disable-video-cocoa \
 	--disable-video-metal \
 	--disable-video-wayland \
