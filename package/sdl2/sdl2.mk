@@ -53,12 +53,12 @@ SDL2_POST_INSTALL_STAGING_HOOKS += SDL2_FIX_SDL2_CONFIG_CMAKE
 # We must enable static build to get compilation successful.
 SDL2_CONF_OPTS += --enable-static
 
-ifeq ($(BR2_PACKAGE_HAS_UDEV),y)
-SDL2_DEPENDENCIES += udev
-SDL2_CONF_OPTS += --enable-libudev
-else
+#ifeq ($(BR2_PACKAGE_HAS_UDEV),y)
+#SDL2_DEPENDENCIES += udev
+#SDL2_CONF_OPTS += --enable-libudev
+#else
 SDL2_CONF_OPTS += --disable-libudev
-endif
+#endif
 
 ifeq ($(BR2_X86_CPU_HAS_SSE),y)
 SDL2_CONF_OPTS += --enable-sse
